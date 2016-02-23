@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage[letterpaper, portrait, margin=1.0in]{geometry}
+\usepackage{lipsum}
+
+% Font -- lmodern (Latin Modern Sans)
+% LaTeX Font Resource: http://www.tug.dk/FontCatalogue/
+\usepackage{lmodern}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+
+% No page numbering
+\pagenumbering{gobble}
+
+% Font Awesome for the icons
+\usepackage{fontawesome}
+
+% Section formatting and hrule
+\usepackage{titlesec}
+\titleformat{\section}
+  {\normalfont\large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
+
+% Subsection formatting
+\titleformat{\subsection}
+  {\normalfont\normalsize\bfseries}{\thesection}{1em}{}
+
+% Item list separation
+\usepackage{enumitem}
+\setlist{  
+  listparindent=\parindent,
+  parsep=1pt,
+  leftmargin=*,
+}
+
+% Colors
+\usepackage{color}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{special-color}{RGB}{51,51,178}
+
+% Multicolumn
+\usepackage{multicol}
+\setlength\multicolsep{-\baselineskip}
+
+% Special linebreak for multicol bug
+\newcommand{\speciallinebreak}{{\LARGE{\color{white}x}}}
+
+\begin{document}
+  % Page 1
+  \input{personal-information}
+  \input{employment-history}
+  \input{work-experience}
+  
+  % Page 2
+  \pagebreak
+  \input{education}
+  \input{skills}
+  
+  % Page 3
+  %\pagebreak
+  %\input{awards-scholarships}
+  %\input{volunteer}
+  %\input{certificates}
+  %\input{hobbies}
+ 
+\end{document}

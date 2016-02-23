@@ -1,0 +1,31 @@
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	src: url('../assets/Roboto.woff');
+	font-weight: 400;
+}
+
+body {
+	font-family: 'Roboto', Georgia, Times, serif;
+}
+
+
+.no-underline-hover:hover {
+	text-decoration: none;
+}
+
+.link-color {
+	color: #888888;
+}
+
+.link-color:hover {
+	color: #333333;
+}
+
+.vertical-center {
+	min-height: 100%; 
+	min-height: 100vh;
+
+	display: flex;
+	align-items: center;
+}
