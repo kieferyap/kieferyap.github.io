@@ -1,3 +1,4 @@
+
 @font-face {
 	font-family: 'Roboto';
 	font-style: normal;
@@ -9,17 +10,20 @@ body {
 	font-family: 'Roboto', Georgia, Times, serif;
 }
 
+.container > .jumbotron {
+	background-color: #E4F1FE;
+}
 
 .no-underline-hover:hover {
 	text-decoration: none;
 }
 
 .link-color {
-	color: #888888;
+	color: #FFFFFF;
 }
 
 .link-color:hover {
-	color: #333333;
+	color: #CCCCCC;
 }
 
 .vertical-center {
