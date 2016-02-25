@@ -17,18 +17,18 @@
 % Section formatting and hrule
 \usepackage{titlesec}
 \titleformat{\section}
-  {\normalfont\large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
+	{\normalfont\large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
 
 % Subsection formatting
 \titleformat{\subsection}
-  {\normalfont\normalsize\bfseries}{\thesection}{1em}{}
+{\normalfont\normalsize\bfseries}{\thesection}{1em}{}
 
 % Item list separation
 \usepackage{enumitem}
 \setlist{  
-  listparindent=\parindent,
-  parsep=1pt,
-  leftmargin=*,
+	listparindent=\parindent,
+	parsep=1pt,
+	leftmargin=*,
 }
 
 % Colors
@@ -45,49 +45,49 @@
 
 % Employment and Volunteering Template
 \newcommand{\work}[6]{
-  \subsection*{{\color{special-color}#1 \hfill \textnormal{\emph{#2}}}}
-  \begin{description}
-  \item[#3] \emph{#4 \hfill {\color{gray}#5}}
-  \item #6
-  \end{description}
+	\subsection*{{\color{special-color}#1 \hfill \textnormal{\emph{#2}}}}
+	\begin{description}
+		\item[#3] \emph{#4 \hfill {\color{gray}#5}}
+		\item #6
+	\end{description}
 }
 
 % Employment template
 \newcommand{\employment}[5]{
-  \work{#1}{#2}{\faSuitcase}{#3}{#4}{#5}
+	\work{#1}{#2}{\faSuitcase}{#3}{#4}{#5}
 }
 
 % Volunteer template
 \newcommand{\volunteer}[5]{
-  \work{#1}{#2}{\faUsers}{#3}{#4}{#5}
+	\work{#1}{#2}{\faUsers}{#3}{#4}{#5}
 }
 
 % Academe template
 \newcommand{\academe}[7]{
-  \subsection*{{\color{special-color}#1 \hfill \textnormal{\emph{#2}}}}
-  \begin{description}
-  \item[\faGraduationCap] \emph{#3 \hfill {\color{gray}#4}}
-  \item[\faTrophy] #5
-  \item #6
-  \item #7
-  \end{description}
+	\subsection*{{\color{special-color}#1 \hfill \textnormal{\emph{#2}}}}
+	\begin{description}
+		\item[\faGraduationCap] \emph{#3 \hfill {\color{gray}#4}}
+		\item[\faTrophy] #5
+		\item #6
+		\item #7
+	\end{description}
 }
 
 % Certificates template
 \newcommand{\certificate}[4]{
-  \subsection*{{\color{special-color}\faCertificate \ #1 \hfill \textnormal{\emph{#2}}}}
-  \begin{description}
-  \item \emph{#3 \hfill {\color{gray}#4}}
-  \end{description}
+	\subsection*{{\color{special-color}\faCertificate \ #1 \hfill \textnormal{\emph{#2}}}}
+	\begin{description}
+		\item \emph{#3 \hfill {\color{gray}#4}}
+	\end{description}
 }
 
 % Awards template
 \newcommand{\award}[5]{
-  \subsection*{{\color{special-color}\faTrophy \  #1 \hfill \textnormal{\emph{#2}}}}
-  \begin{description}
-  \item \emph{#3 \hfill {\color{gray}#4}}
-  \item #5
-  \end{description}
+	\subsection*{{\color{special-color}\faTrophy \  #1 \hfill \textnormal{\emph{#2}}}}
+	\begin{description}
+		\item \emph{#3 \hfill {\color{gray}#4}}
+		\item #5
+	\end{description}
 }
 
 % If you're reading this, you're probably browsing around the code. In which
@@ -98,21 +98,22 @@
 % style so I ended up making one.
 
 \begin{document}
-  % Page 1
-  \input{personal-information}
-  \input{employment-history}
-  \input{work-experience}
-  
-  % Page 2
-  \pagebreak
-  \input{education}
-  \input{skills}
-  
-  % Page 3
-  % \pagebreak
-  % \input{awards-scholarships}
-  % \input{volunteer}
-  % \input{certificates}
-  % \input{hobbies}
-  
+
+	% Page 1
+	\input{personal-information}
+	\input{employment-history}
+	\input{work-experience}
+
+	% Page 2
+	\pagebreak
+	\input{education}
+	\input{skills}
+
+	% Page 3
+	% \pagebreak
+	% \input{awards-scholarships}
+	% \input{volunteer}
+	% \input{certificates}
+	% \input{hobbies}
+
 \end{document}
