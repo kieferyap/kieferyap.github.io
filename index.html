@@ -2,9 +2,13 @@
 <html>
 <head>
 	<title> Kiefer Yap | Website Hub </title>
-	<link rel="stylesheet" href="plugins\bootstrap-3.3.6\css\bootstrap.min.css">
-	<link rel="stylesheet" href="plugins\font-awesome-4.5.0\css\font-awesome.min.css">
-	<link rel="stylesheet" href="assets\styles.css">
+
+	<link rel="stylesheet" href="plugins/bootstrap-3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="plugins/font-awesome-4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/styles.css">
+	<script type="text/javascript" src="plugins/jquery-2.2.1.min.js"></script>
+	<script type="text/javascript" src="assets/script.js"></script>
+
 	<script>
 		// Google Analytics
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -14,6 +18,7 @@
 		ga('create', 'UA-74234488-1', 'auto');
 		ga('send', 'pageview');
 	</script>
+	
 </head>
 <body>
 	<div class="container">
@@ -27,25 +32,17 @@
 
 			<div class="row text-center">
 				<div class="btn-group">
-					<button type="button" class="btn btn-primary" aria-label="GitHub">
-						<a href="https://github.com/kieferyap">
-							<span class="fa fa-3x no-underline-hover link-color fa-github"/>										
-						</a> 
+					<button type="button" class="btn btn-primary btn-with-link" aria-label="GitHub" data-url="https://github.com/kieferyap">
+						<span class="fa fa-3x no-underline-hover link-color fa-github"/>	
 					</button>
-					<button type="button" class="btn btn-primary" aria-label="LinkedIn">
-						<a href="https://www.linkedin.com/in/kiefer-yap-b715155b">
-							<span class="fa fa-3x no-underline-hover link-color fa-linkedin"/>										
-						</a> 
+					<button type="button" class="btn btn-primary btn-with-link" aria-label="LinkedIn" data-url="https://www.linkedin.com/in/kiefer-yap-b715155b">
+						<span class="fa fa-3x no-underline-hover link-color fa-linkedin"/>
 					</button>
-					<button type="button" class="btn btn-primary" aria-label="Wordpress">
-						<a href="http://kieferyap.wordpress.com">
-							<span class="fa fa-3x no-underline-hover link-color fa-wordpress"/>									
-						</a>
+					<button type="button" class="btn btn-primary btn-with-link" aria-label="Wordpress" data-url="http://kieferyap.wordpress.com">
+						<span class="fa fa-3x no-underline-hover link-color fa-wordpress"/>
 					</button>
-					<button type="button" class="btn btn-primary" aria-label="CV">
-						<a href="project\main.pdf">
-							<span class="fa fa-3x no-underline-hover link-color fa-file-text"/>									
-						</a>
+					<button type="button" class="btn btn-primary btn-with-link" aria-label="CV" data-url="project/main.pdf">
+						<span class="fa fa-3x no-underline-hover link-color fa-file-text"/>
 					</button>
 				</div>
 			</div>
