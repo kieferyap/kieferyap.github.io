@@ -73,6 +73,16 @@
 	\end{description}
 }
 
+% Academe template single description
+\newcommand{\academelite}[6]{
+	\subsection*{{\color{special-color}#1 \hfill \textnormal{\emph{#2}}}}
+	\begin{description}
+		\item[\faGraduationCap] \emph{#3 \hfill {\color{gray}#4}}
+		\item[\faTrophy] #5
+		\item #6
+	\end{description}
+}
+
 % Certificates template
 \newcommand{\certificate}[4]{
 	\subsection*{{\color{special-color}\faCertificate \ #1 \hfill \textnormal{\emph{#2}}}}
@@ -90,6 +100,14 @@
 	\end{description}
 }
 
+% Additional package for English-teaching resume
+\usepackage{graphicx}
+\graphicspath{{images/}}
+
+\newcommand{\doublenewline}{
+	\newline ~ \newline
+}
+
 % If you're reading this, you're probably browsing around the code. In which
 % case, you might see quite a bit of stuff that's commented out.
 
@@ -101,12 +119,14 @@
 
 	% Page 1
 	\input{personal-information}
-	\input{employment-history}
-	\input{work-experience}
+    \input{career-objective}
+	\input{education}
+    \input{volunteer}
 
 	% Page 2
-	\pagebreak
-	\input{education}
+	% \pagebreak
+   	\input{employment-history}
+	\input{work-experience}
 	\input{skills}
 
 	% Page 3
@@ -115,5 +135,9 @@
 	% \input{volunteer}
 	% \input{certificates}
 	% \input{hobbies}
+    
+    % Cover Letter
+%     \pagebreak
+%     \include{cover-letter}
 
 \end{document}
